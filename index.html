@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=OpenSans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://news.sap.com/wp-content/blogs.dir/1/files/Futurist_feature.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Futurist</a>
+    
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Info</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Work</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Requirements</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+    </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-mediu
+m" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Work</a>
+  <a href="#Requirements" onclick="w3_close()" class="w3-bar-item w3-button">Requirements</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-xxxlarge w3-hide-small">Reframe The Future</span><br>
+  
+    <h2 class="w3-medium w3-center">Literally.</h2>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">About The Job</h3>
+  <p class="w3-center w3-small">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-full">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-small">History</p>
+      <p> I would presume that most people wouldn't even know what a Futurist even is or even what they do, but they have an extreme impact on the Earth we live on and they deserve more acknowledgement. Normaqlly known as Futurists or Futurologists are social scientists who specilize in futurology and attempt to explore predictions about the future and how they can emerge from the present, whether that of human society in particular or of life on Earth in general.</p>
+    </div>
+    <div class="w3-full">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p class="w3-medium">There is a reason why I specifically chose Futurist as the job for this project. I have always wanted to be one after knowing what they actually do and how they do it. The job sounds incredibly complex and hard but to me, its incredibly interesting because how much they impact the advancement of technology. </p>
+    </div>
+    <div class="w3-full">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p class="w3-medium"> One very important part of being a Futurist is being able to code in multiple programming languages and to be able to design pieces of technology from different units such as biology which you could make a solar powered Water Filter or in Astronomy where you could be able to design a satellite. Futurists design technology for multiple technological companies for their use to prevent events from harming their company or anyone associated with them. Plus, futurists also work the government to design weapons and predict moves in war. </p>
+    </div>
+    <div class="w3-full">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p class="w3-medium">Futurists support multiple companies with the development of future technology and bringing it to the present as fast as possible.
+     One of the most popular creations made by Modern Futurists is foldable oled screens. As most people know, Samsung is creating  a phone in the future that can fold in half turning the device from a size of a standard mobile phone into a 7" screen instantly. Futurists create this technology to help people building businesses and finding plans to stop global threats such as Global Warming. Futurists make a very big impact on our lives, and we don't give them enough credit.</p>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3 class="w3-large">We know design.</h3>
+      <p>Fun Fact! 
+      One of the most popular futurists is actually a fictional superhero called Iron Man commonly known as Tony Stark. In the comics, he is known for building great technology for his people and finding breakthrough technology with the help of  his multi-trillion company Stark Unlimited. I will be using this company as an example throughout the website. </p>
+  <p><a href="#work" class="w3-button w3-white"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://vignette.wikia.nocookie.net/marveldatabase/images/e/e0/Stark_Unlimited_%28Earth-616%29_from_Tony_Stark_Iron_Man_Vol_1_1_001.jpg/revision/latest?cb=20180622235520"    alt="Tony Stark" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+
+   <p class="w3-center w3-medium">As mentioned before, the most popular futurists own their own technology advancement companies.</p>
+  
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://vignette.wikia.nocookie.net/marveldatabase/images/3/33/Anthony_Stark_%28Earth-616%29_from_Civil_War_II_Vol_1_1_007.jpg/revision/latest?cb=20160601205850" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Lead Futurist</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>The lead futurists in his group, he is given the most reponsibility within the whole company to hand out multiple tasks so finish contracts with other companies to recieve money and he stars in all the divisions of this job.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://vignette.wikia.nocookie.net/marveldatabase/images/d/df/Friday_%28Earth-616%29_from_Invincible_Iron_Man_Vol_3_1_001.jpg/revision/latest/scale-to-width-down/180?cb=20151031041246" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Lead Futurist Assistant</h3>
+          <p class="w3-opacity">AI Assistant</p>
+          <p>Multiple companies are heading on a path of having an AI work for them as an assistant to run tasks saving them money for salary and getting work done while being efficient.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://vignette.wikia.nocookie.net/marveldatabase/images/7/79/Andrew_Bhang_%28Earth-616%29_from_Tony_Stark_Iron_Man_Vol_1_1_001.jpg/revision/latest/scale-to-width-down/112?cb=20180621140159" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Secondary Futurist (Robotic Division)</h3>
+          <p class="w3-opacity">Secondary Futurist</p>
+          <p>This futurist is the head of the robotics division meaning that he does all the circuits and designing of the technology.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://vignette.wikia.nocookie.net/marveldatabase/images/d/d5/Jocasta_Pym_%28Earth-616%29_from_Avengers_A.I._Vol_1_7.INH_001.jpg/revision/latest?cb=20180909022805
+     "alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Third Futurist (Chief Robotic Ethicist)</h3>
+          <p class="w3-opacity">Third Futurist</p>
+          <p>This futurist stars in the 3d modeling division and debugging circuits made by the robotic divsion futurist.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-medium">4+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-medium">1,000,000+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-medium">2,000,000,000+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-medium">infinite+</span>
+    <br>Meetings
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="https://s3.envato.com/files/188606382/Future%20Satellite%20Reveal%20Preview%20Image.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A Satellite">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://file.mk.co.kr/meet/neds/2017/12/image_readtop_2017_852666_15142703693149206.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Foldable Oled Screen">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://cdn.theatlantic.com/assets/media/img/mt/2015/10/car1/lead_720_405.jpg?mod=1533691777" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Self Driving Cars">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://c.slashgear.com/wp-content/uploads/2017/05/cortana-hologram-800x420.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hologram Concept">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="https://ville.montreal.qc.ca/idmtl/en/wp-content/uploads/sites/2/2018/02/intelligence-artificielle-10.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Artificial Intelligence">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://www.appropedia.org/images/thumb/9/97/Distillation_Concept_2.jpg/1200px-Distillation_Concept_2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Solar Powered Water Purification System">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://blogs.discovermagazine.com/drone360/files/2015/08/mars-drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Intergalactic Drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://i0.wp.com/www.dailycal.org/assets/uploads/2015/04/hadroncollider_creativecommons-900x580.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Infinite Energy Research">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Skills and Salary.</h3>
+      <p class="w3-small">There are multiple skills needed to get a chance of having this job in the future but lets get more in depth into these needed skills.</p>
+      <p class="w3-small">One of the needed skills for this job is proggramming skills. The average futurlogist is capable of being able to type in 9 adavanced languages with the most popular ones being Python and c++ considering these are the 2 languages being used to code the UI and operating systems we use on our phone and laptops everyday.</p>
+<p class="w3-small"> The average futurologist makes around $275,000 a year based on the level of company as in Samsung would be at the highest level so you would make the most money but most Futurists would want to work at space explooration companies such as Nasa or Space inc.</p>
+    </div>
+    <div class="w3-col m6">
+     <p class<""w3-wide"><i class="fa fa-camera w3-margin-right">
+     </i>Coding</p>
+     <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>3D Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:89%">89%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Circuit Building</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:82%">82%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>Salary</h3>
+  <p class="w3-large"></p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-medium w3-padding-32">Level 1 (Blackberry)</li>
+        <li class="w3-padding-16"><b>Full Time</b> Job</li>
+        <li class="w3-padding-16"><b>$45,000+</b> </li>
+        <li class="w3-padding-16"><b>Lead Futurist</b> Job</li>
+        <li class="w3-padding-16"><b>Limited</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-medium">$4090+</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-medium w3-padding-48">Level 2          (Hp)</li>
+        <li class="w3-padding-16"><b>Full Time </b>Job</li>
+        <li class="w3-padding-16"><b>$110,000+</b></li>
+        <li class="w3-padding-16"><b>Lead Futurist</b> Job</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-medium">$10,000+</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-medium w3-padding-32">Level 3    (Samsung)</li>
+        <li class="w3-padding-16"><b>Full Time</b> Job</li>
+        <li class="w3-padding-16"><b></b>$275,000+</li>
+        <li class="w3-padding-16"><b>Lead Futurist</b>Job</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-medium">$25,000+</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Los Angeles, USA</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +905 555 9015</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: jjakinsete@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">John Akinsete</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
